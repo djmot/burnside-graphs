@@ -26,4 +26,7 @@ You will need C++ compilation tools - I use [mingw-w64](http://mingw-w64.org/dok
 
 Run ```main.exe```. The program will prompt you to enter new identities - just skip this by typing "n". Once the graph is finished, the program will save *graphinfo.txt* and exit.
 
-*graphinfo.txt* prints the list of nodes in the graph, the list of x-edges, and the list of y-edges. *x* and *y* are the two generating elements. An x-edge (a, b) is a directed edge from group element *a* to group element *b*. Hence, graphinfo.txt contains all the information needed to construct the Cayley graph.
+*graphinfo.txt* contains all the information needed to construct the Cayley graph: 
+1. the distinct nodes (group elements) 
+2. the edges labelled with the first generator *x* ("x-edges")
+3. the edges labelled with the second generator *y* ("y-edges")
